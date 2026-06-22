@@ -112,6 +112,9 @@ class _CustomNavigatorState extends State<CustomNavigator>
   void didHaveMemoryPressure() {}
 
   @override
+  void handleStatusBarTap() {}
+
+  @override
   Future<bool> didPushRouteInformation(RouteInformation routeInformation) {
     return didPushRoute(routeInformation.uri.toString());
   }
